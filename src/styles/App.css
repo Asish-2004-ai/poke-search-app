@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f4f7;
+}
+
+.header {
+  background-color: #ef5350;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 600px) {
+  .controls {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.search-bar, .filter-dropdown {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.pokemon-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pokemon-card img {
+  width: 100px;
+  height: 100px;
+}
+
+.types {
+  margin-top: 0.5rem;
+}
+
+.type {
+  display: inline-block;
+  background: #eee;
+  border-radius: 4px;
+  padding: 2px 6px;
+  margin: 2px;
+  font-size: 0.8rem;
+}
+
+/* Example type-specific styling */
+.type.fire { background: #f08030; color: white; }
+.type.water { background: #6890f0; color: white; }
+.type.grass { background: #78c850; color: white; }
+.type.electric { background: #f8d030; color: black; }
+.type.ice { background: #98d8d8; color: black; }
+.type.psychic { background: #f85888; color: white; }
