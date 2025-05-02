@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useFavorites } from "../context/FavoritesContext";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function Compare() {
   const { favorites } = useFavorites();
@@ -19,7 +19,6 @@ function Compare() {
     }
   };
 
-  // Check if pokemon1 and pokemon2 have stats property before rendering the comparison
   const hasStats = (pokemon) => pokemon && pokemon.stats && Array.isArray(pokemon.stats);
 
   return (

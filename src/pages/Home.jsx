@@ -10,7 +10,7 @@ function Home() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedTypes, setSelectedTypes] = useState([]); // ✅ MULTI-TYPE FILTER
+  const [selectedTypes, setSelectedTypes] = useState([]); 
   const [types, setTypes] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [sortOption, setSortOption] = useState("");
@@ -18,12 +18,10 @@ function Home() {
 
   const itemsPerPage = 20;
 
-  // ✅ TOGGLE TYPE FUNCTION (only one checkbox selected at a time)
   const toggleType = (type) => {
-    setSelectedTypes([type]); // Reset to just the selected type
+    setSelectedTypes([type]); 
   };
 
-  // ✅ FILTER & SORT
   const sortedFilteredPokemon = useMemo(() => {
     let list = [...pokemonList];
 
@@ -103,7 +101,6 @@ function Home() {
       <div className="controls">
         <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 
-        {/* ✅ MULTI-TYPE CHECKBOX FILTER */}
         <div className="type-filters">
           {types.map((type) => (
             <label key={type} style={{ marginRight: "1rem" }}>
@@ -118,7 +115,6 @@ function Home() {
           ))}
         </div>
 
-        {/* SORT DROPDOWN */}
         <select
           value={sortOption}
           onChange={(e) => setSortOption(e.target.value)}

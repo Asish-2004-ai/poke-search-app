@@ -38,7 +38,6 @@ function Detail() {
           <li key={move.move.name}>{move.move.name}</li>
         ))}
       </ul>
-      {/* TODO: add evolution chain */}
     </div>
   );
 }

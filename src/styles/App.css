@@ -67,7 +67,6 @@ body {
   font-size: 0.8rem;
 }
 
-/* Example type-specific styling */
 .type.fire { background: #f08030; color: white; }
 .type.water { background: #6890f0; color: white; }
 .type.grass { background: #78c850; color: white; }

@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { PokemonProvider } from "../src/context/PokemonContext";
-// import { FavoritesProvider } from "../src/context/FavoritesContext";
+
 
 
 

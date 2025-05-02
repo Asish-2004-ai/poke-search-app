@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-// import { PokemonContext } from "../context/PokemonContext";
 import { FavoritesContext } from "../context/FavoritesContext";
 
 
