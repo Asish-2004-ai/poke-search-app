@@ -74,3 +74,92 @@ body {
 .type.electric { background: #f8d030; color: black; }
 .type.ice { background: #98d8d8; color: black; }
 .type.psychic { background: #f85888; color: white; }
+
+/* Compare.css */
+
+.compare-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h3 {
+  color: #555;
+}
+
+select {
+  padding: 8px;
+  margin: 10px 0;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+select:focus {
+  outline: none;
+  border-color: #4d90fe;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+td {
+  color: #555;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+}
+
+.comparison-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
